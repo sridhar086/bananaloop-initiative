@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BananaLoop Initiative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Added Comfortaa font for the circular, loopy text style -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        comfortaa: ['Comfortaa', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-200 selection:text-emerald-900 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo Section -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-full overflow-hidden relative bg-white border border-slate-100 shadow-sm flex-shrink-0 flex items-center justify-center p-1">
+                        <img src="logo2.jpg" alt="BananaLoop Logo" class="w-full h-full object-contain rounded-full" onerror="this.src='https://placehold.co/100x100/22c55e/ffffff?text=BL'">
+                    </div>
+                    <!-- Stylized BananaLoop Name -->
+                    <div class="font-comfortaa text-2xl tracking-tighter">
+                        <span class="text-slate-900 font-bold">Banana</span><span class="text-transparent bg-clip-text bg-gradient-to-br from-emerald-500 to-teal-600 font-bold">L<span class="font-normal text-[1.6em] leading-none align-middle text-yellow-500">&infin;</span>p</span>
+                    </div>
+                    <div class="hidden sm:block ml-3">
+                        <span class="font-light text-sm tracking-widest text-slate-500 uppercase font-sans">Initiative</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#pillars" class="text-slate-600 hover:text-emerald-600 transition-colors">Research Pillars</a>
+                    <a href="#approach" class="text-slate-600 hover:text-emerald-600 transition-colors">Methodology</a>
+                    <a href="#about" class="text-slate-600 hover:text-emerald-600 transition-colors">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-br from-emerald-500 via-green-400 to-emerald-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/80 border border-emerald-300 text-emerald-800 text-sm font-semibold tracking-wide uppercase"><span class="inline-block w-2 h-2 rounded-full bg-[#F4A300] mr-2 align-middle"></span>
+                    Human Communities That Mimic Ecosystems
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
+                    Building resilient, equitable, and <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-900 to-teal-800">resource-efficient</span> communities.
+                </h1>
+                <p class="text-lg md:text-xl text-slate-800 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    An emerging independent research and policy initiative exploring how infrastructure, technology, and public policy can improve urban resilience, equitable energy access, and circular resource use.
+                </p>
+            </div>
+        </section>
+
+        <!-- Research Pillars Section -->
+        <section id="pillars" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Core Research Pillars</h2>
+                    <p class="text-slate-600 max-w-2xl mx-auto">Our work brings together three interconnected areas to help communities manage environmental risks and expand access to essential services.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Pillar 1 -->
+                    <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">01. Urban Resilience & Living Systems</h3>
+                        <p class="text-slate-600 mb-6 text-sm">How can cities better withstand and adapt to environmental stresses?</p>
+                        <ul class="space-y-2 text-sm text-slate-600">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Flood risk & floodplain modeling</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Stormwater & nature-based solutions</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Heat-resilient neighborhoods</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">02. Energy Access & Equity</h3>
+                        <p class="text-slate-600 mb-6 text-sm">How can reliable, affordable energy services reach everyone?</p>
+                        <ul class="space-y-2 text-sm text-slate-600">
+                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Distributed systems & microgrids</li>
+                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Equitable access to cooling</li>
+                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Energy affordability metrics</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow duration-300">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-recycle"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">03. Circular Economy & Resource Systems</h3>
+                        <p class="text-slate-600 mb-6 text-sm">How can materials remain useful instead of becoming waste?</p>
+                        <ul class="space-y-2 text-sm text-slate-600">
+                            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Material reuse & recovery</li>
+                            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Resource efficiency & LCA</li>
+                            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Waste policy & regulatory barriers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Methodology Layer (compact) -->
+                <div id="approach" class="mt-16 pt-12 border-t border-slate-200">
+                    <div class="text-center mb-10">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">The Methodology Layer</h3>
+                        <p class="text-slate-600 max-w-2xl mx-auto text-sm">What connects these three pillars? A cross-cutting approach rooted in computational rigor, bridging environmental challenges and actionable public policy.</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="flex gap-4 bg-slate-50 rounded-xl p-5 border border-slate-100">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center"><i class="fa-solid fa-code-branch"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Data Science &amp; AI</h4>
+                                <p class="text-sm text-slate-600">Identifying patterns in flood risk, energy insecurity, and waste streams.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 bg-slate-50 rounded-xl p-5 border border-slate-100">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Geospatial Analysis</h4>
+                                <p class="text-sm text-slate-600">Mapping environmental exposure and infrastructure vulnerabilities.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 bg-slate-50 rounded-xl p-5 border border-slate-100">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Systems &amp; Policy Modeling</h4>
+                                <p class="text-sm text-slate-600">Evaluating interventions, trade-offs, and distributional equity impacts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">About Me</h2>
+                    <div class="w-16 h-1 bg-emerald-500 rounded-full mx-auto"></div>
+                </div>
+
+                <div class="grid lg:grid-cols-5 gap-12 items-start">
+                    <div class="lg:col-span-3 space-y-5 text-slate-600 leading-relaxed text-justify [hyphens:auto]">
+                        <p>
+                            I am a software and data engineer by background, with more than a decade of experience building large-scale technology systems and working with complex data.
+                        </p>
+                        <p>
+                            My professional career has primarily been in software engineering, distributed systems, cloud infrastructure, data engineering, and large-scale data platforms. I have worked at companies including Oracle and DocuSign, building systems that operate at significant scale and working with data-intensive infrastructure, APIs, distributed processing, identity systems, security, and cloud platforms.
+                        </p>
+                        <p>
+                            My earlier work also gave me experience applying computational methods to environmental and geospatial problems. At Red Hen Systems, I worked on GIS software and geospatial data used in the energy sector, including systems associated with oil and gas operations.
+                        </p>
+                        <p>
+                            My academic background is in electrical and computer engineering. I completed my master's degree at Colorado State University, where my research focused on mathematical and computational methods for complex networks. This work strengthened my foundation in applied mathematics, network analysis, and computational problem-solving, and continues to inform how I approach interconnected systems and complex real-world challenges.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-2 space-y-5">
+                        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex gap-4">
+                            <div class="w-10 h-10 flex-shrink-0 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center"><i class="fa-solid fa-server"></i></div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Software &amp; Data Engineering</h3>
+                                <p class="text-sm text-slate-600">Oracle, DocuSign &middot; distributed systems, cloud, data platforms</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex gap-4">
+                            <div class="w-10 h-10 flex-shrink-0 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Geospatial &amp; GIS</h3>
+                                <p class="text-sm text-slate-600">Red Hen Systems &middot; GIS software and geospatial data for the energy sector</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex gap-4">
+                            <div class="w-10 h-10 flex-shrink-0 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Electrical &amp; Computer Engineering</h3>
+                                <p class="text-sm text-slate-600">M.S., Colorado State University &middot; mathematical and computational methods for complex networks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Closing statement -->
+                <div class="mt-16 max-w-3xl mx-auto text-center">
+                    <p class="text-slate-500 mb-4">Across these experiences, one theme has remained consistent:</p>
+                    <blockquote class="text-xl md:text-2xl font-semibold text-slate-900 leading-snug border-l-4 border-emerald-500 pl-6 text-left">
+                        I like understanding complicated systems, finding the relationships between their components, and building practical ways to make those systems work better.
+                    </blockquote>
+                    <p class="mt-6 text-lg font-semibold text-emerald-700">That is the perspective I now want to apply to environmental and urban challenges.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why This Work Is Personal Section -->
+        <section id="personal" class="py-20 bg-slate-50">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Why This Work Is Personal</h2>
+                    <div class="w-16 h-1 bg-emerald-500 rounded-full mx-auto mb-6"></div>
+                    <p class="text-xl md:text-2xl font-semibold text-emerald-700 leading-snug">My interest in resilient living began long before Banana Loop.</p>
+                </div>
+
+                <div class="space-y-5 text-slate-600 leading-relaxed text-justify [hyphens:auto]">
+                    <p>
+                        I grew up in India, in a hot and humid environment where the effects of heat, water shortages, and unreliable access to essential resources were part of everyday life. These were not abstract environmental challenges. They shaped how people studied, worked, managed their homes, and went about their lives.
+                    </p>
+                    <p>
+                        I remember seeing a child faint during school assemblies held in the sun. I remember hearing about a young mother who died from summer exhaustion indoors, and a postman whose years of working through the summer heat ended in tragedy. Experiences like these left me with questions that have stayed with me: Why do ordinary environmental conditions become dangerous for some people? Why can a home, which should offer protection, become unsafe? And why does the ability to cope with heat depend so much on a person's circumstances?
+                    </p>
+                    <p>
+                        I also experienced the everyday consequences of resource constraints. I remember studying for my twelfth-grade computer science examination by candlelight. Water availability and quality could not always be taken for granted, and making the most of what was available was simply part of life. These experiences shaped my understanding of resilience long before I had a word for it.
+                    </p>
+                    <p>
+                        Over time, I began to see a connection between these everyday difficulties and the larger systems surrounding us. Heat is connected to buildings, electricity, and access to cooling. Water security is connected to energy, infrastructure, and how communities manage the resources available to them. Flooding is connected to how cities grow, how land is used, and what happens to rainwater once it reaches the ground.
+                    </p>
+
+                    <p class="text-lg font-semibold text-slate-900 border-l-4 border-emerald-500 pl-5 py-1 text-left">
+                        These are not isolated problems. They are connected systems, and the consequences of their failure are not experienced equally.
+                    </p>
+
+                    <p>
+                        My professional life took me into software engineering and data systems. For more than a decade, I have worked on building and improving complex technological systems. That experience gave me tools to approach difficult problems through engineering, data, and systems thinking. But it also made me increasingly interested in applying those skills to the systems that directly shape people's lives.
+                    </p>
+                    <p>
+                        I want to understand how communities can maintain access to cooling during extreme heat, how distributed energy can improve resilience, how cities can manage water and recurrent flooding more intelligently, and how we can keep valuable materials in use instead of treating them as waste. I am interested not only in whether a solution works technically, but also in whether people can access it, afford it, and depend on it when they need it most.
+                    </p>
+                    <p>
+                        For me, caring about the Earth is inseparable from caring about the conditions in which people live. The natural environment, the built environment, energy, water, and human well-being are deeply connected. Protecting one while ignoring the others will rarely be enough.
+                    </p>
+                </div>
+
+                <!-- Closing callout -->
+                <div class="mt-12 bg-white rounded-2xl border border-emerald-200 p-6 sm:p-8 shadow-sm">
+                    <p class="text-slate-600 leading-relaxed mb-5 text-justify [hyphens:auto]">
+                        <strong class="text-slate-900">Banana Loop is my way of exploring these connections and working toward more resilient ways of living.</strong> I bring an engineering and technology background to these questions, along with personal experiences that remind me why the answers matter. I want to use that combination to investigate practical ideas, learn across disciplines, and contribute to systems that use resources more intelligently and make essential services more reliable and equitable.
+                    </p>
+                    <p class="text-emerald-700 font-semibold">
+                        This is not a departure from my engineering career. It is a direction in which I want to put that experience to work.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-slate-200 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            <div class="w-32 h-32 md:w-40 md:h-40 mb-6 rounded-full overflow-hidden flex-shrink-0 bg-white border border-slate-100 shadow-md p-2">
+                <img src="logo2.jpg" alt="BananaLoop Logo" class="w-full h-full object-contain rounded-full" onerror="this.src='https://placehold.co/160x160/22c55e/ffffff?text=BL'">
+            </div>
+            <div class="font-comfortaa text-xl tracking-tighter mb-2">
+                <span class="text-slate-900 font-bold">Banana</span><span class="text-emerald-600 font-bold">L<span class="font-normal text-[1.6em] leading-none align-middle text-yellow-500">&infin;</span>p</span> <span class="font-light text-slate-500 uppercase text-sm tracking-widest ml-1 font-sans">Initiative</span>
+            </div>
+            <p class="text-slate-500 text-sm mb-6 text-center max-w-md">Building resilient, equitable, and resource-efficient communities.</p>
+            <div class="max-w-xl mx-auto mb-8 bg-emerald-50 border border-emerald-200 rounded-2xl px-6 py-5 text-center">
+                <p class="text-xs font-bold tracking-widest uppercase text-emerald-700 mb-2">The idea behind the name</p>
+                <p class="text-slate-700 text-sm leading-relaxed text-justify [hyphens:auto]">The banana plant is a remarkable example of a circular system. It provides food, leaves for plates, fibers for textiles, and new shoots for continued growth. Its organic matter eventually returns to the soil, enriching it for future growth. Banana Loop draws inspiration from this natural cycle of regeneration, resourcefulness, and renewal.</p>
+            </div>
+            <p class="text-slate-400 text-xs">© 2026 BananaLoop Initiative. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
